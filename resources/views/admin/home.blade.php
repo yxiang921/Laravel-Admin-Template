@@ -6,7 +6,7 @@
             <div class="text-gray-800 text-xl font-semibold">Dashboard</div>
             <div class="flex items-center space-x-4">
                 {{-- <div class="text-gray-800">{{ Auth::user()->name }}</div> --}}
-                <img src="{{ asset('images/profile.png') }}" alt="Profile Picture" class="w-8 h-8 rounded-full">
+                {{-- <img src="{{ asset('images/profile.png') }}" alt="Profile Picture" class="w-8 h-8 rounded-full"> --}}
             </div>
         </header>
 
