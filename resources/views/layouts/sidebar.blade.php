@@ -11,10 +11,12 @@
         <aside class="bg-gray-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full lg:relative lg:translate-x-0 transition-transform duration-200">
             <div class="text-white text-2xl font-semibold px-4">College Events</div>
             <nav>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Dashboard</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Home</a>
                 <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Events</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Analytics</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Notifications</a>
                 <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Users</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Reports</a>
+                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Admin</a>
                 <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors">Settings</a>
             </nav>
         </aside>
