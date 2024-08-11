@@ -11,7 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- flatpickr library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- chart.js library -->
 
     <style>
         .no-scrollbar::-webkit-scrollbar {
