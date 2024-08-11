@@ -28,3 +28,15 @@ Route::get('/admin/analytics', function () {
 Route::get('/admin/notifications', function(){
     return view('admin.notifications');
 })->name('admin.notifications');
+
+Route::get('/admin/users', function(){
+    return view('admin.users');
+})->name('admin.users');
+
+Route::get('/admin/admins', function(){
+    return view('admin.admins');
+})->name('admin.admins');
+
+Route::get('/admin/settings', function(){
+    return view('admin.settings');
+})->name('admin.settings');

@@ -55,17 +55,17 @@
                 {{ Route::current()->getName() == 'admin.notifications' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-bell pr-2"></i> Notifications</a>
 
-                <a href="{{ route('admin.home') }}"
+                <a href="{{ route('admin.users') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.users' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-user pr-2"></i> Users</a>
 
-                <a href="{{ route('admin.home') }}"
+                <a href="{{ route('admin.admins') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
-                {{ Route::current()->getName() == 'admin.admin' ? 'text-slate-200' : 'text-slate-500' }}">
+                {{ Route::current()->getName() == 'admin.admins' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-user-gear pr-2"></i> Admin</a>
-                    
-                <a href="{{ route('admin.home') }}"
+
+                <a href="{{ route('admin.settings') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.settings' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-gear pr-2"></i> Settings</a>
