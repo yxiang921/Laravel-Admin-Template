@@ -17,20 +17,34 @@
             class="bg-gray-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full lg:relative lg:translate-x-0 transition-transform duration-200">
             <div class="text-white text-2xl font-semibold px-4">College Events</div>
             <nav>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors text-slate-500"><i
-                        class="fa-solid fa-house pr-2"></i> Home</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-regular fa-calendar-days pr-2"></i> Events</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-solid fa-chart-simple pr-2"></i> Analytics</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-solid fa-bell pr-2"></i> Notifications</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-solid fa-user pr-2"></i> Users</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-solid fa-user-gear pr-2"></i> Admin</a>
-                <a href="#" class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors"><i
-                        class="fa-solid fa-gear pr-2"></i> Settings</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors 
+                {{ Route::current()->getName() == 'admin.home' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-house pr-2"></i> Home</a>
+                <a href="{{ route('admin.events') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.events' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-regular fa-calendar-days pr-2"></i> Events</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.analytics' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-chart-simple pr-2"></i> Analytics</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.notifications' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-bell pr-2"></i> Notifications</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.users' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-user pr-2"></i> Users</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.admin' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-user-gear pr-2"></i> Admin</a>
+                <a href="{{ route('admin.home') }}"
+                    class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
+                {{ Route::current()->getName() == 'admin.settings' ? 'text-slate-200' : 'text-slate-500' }}">
+                    <i class="fa-solid fa-gear pr-2"></i> Settings</a>
             </nav>
         </aside>
 
