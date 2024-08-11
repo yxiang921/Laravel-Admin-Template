@@ -26,33 +26,96 @@
                 <!-- Data analytic 1 -->
                 <div class="bg-white shadow-md p-4">
                     <h2 class="text-lg font-semibold mb-4">Data Analytic 1</h2>
-                    <!-- Add your data analytic code here -->
+                    <div>
+                        <canvas id="chart-1"></canvas>
+                    </div>
                 </div>
 
                 <!-- Data analytic 2 -->
                 <div class="bg-white shadow-md p-4">
                     <h2 class="text-lg font-semibold mb-4">Data Analytic 2</h2>
-                    <!-- Add your data analytic code here -->
-                </div>
-
-                <!-- Data analytic 3 -->
-                <div class="bg-white shadow-md p-4">
-                    <h2 class="text-lg font-semibold mb-4">Data Analytic 3</h2>
-                    <!-- Add your data analytic code here -->
-                </div>
-
-                <!-- Data analytic 4 -->
-                <div class="bg-white shadow-md p-4">
-                    <h2 class="text-lg font-semibold mb-4">Data Analytic 4</h2>
-                    <!-- Add your data analytic code here -->
+                    <div class="">
+                        <canvas id="chart-2"></canvas>
+                    </div>
                 </div>
             </div>
 
             <!-- Chart -->
             <div class="bg-white shadow-md p-4 mt-4">
                 <h2 class="text-lg font-semibold mb-4">Chart</h2>
-                <!-- Add your chart code here -->
+                <div>
+                    <canvas id="chart-3"></canvas>
+                </div>
             </div>
         </main>
     </div>
+
+<script>
+    var barChartCtx = document.getElementById('chart-1').getContext('2d');
+    var barChart = new Chart(barChartCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+
+    var pieChartCtx = document.getElementById('chart-2').getContext('2d');
+    var pieChart = new Chart(pieChartCtx, {
+        type: 'pie',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+
+    var verticalBarChartCtx = document.getElementById('chart-3').getContext('2d');
+    var verticalBarChart = new Chart(verticalBarChartCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    ticks: {
+                        stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+
+
+    pieChart.resize(600, 450);
+</script>
+
 @endsection
