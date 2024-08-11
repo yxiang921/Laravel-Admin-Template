@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
@@ -25,7 +42,7 @@
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.events' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-regular fa-calendar-days pr-2"></i> Events</a>
-                <a href="{{ route('admin.home') }}"
+                <a href="{{ route('admin.analytics') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.analytics' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-chart-simple pr-2"></i> Analytics</a>
@@ -58,7 +75,9 @@
             </button>
         </div>
 
-        @yield('content')
+        <div class="overflow-scroll no-scrollbar w-full">
+            @yield('content')
+        </div>
 
     </div>
 
@@ -66,6 +85,17 @@
         document.getElementById('menu-toggle').addEventListener('click', () => {
             document.querySelector('aside').classList.toggle('-translate-x-full');
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            flatpickr("#date-input", {
+                mode: "range",
+                dateFormat: "Y-m-d",
+                onChange: function(selectedDates) {
+                    filterTable();
+                }
+            });
+        }); 
     </script>
 </body>
 

@@ -11,25 +11,53 @@
         </header>
 
         <!-- Main area -->
-        <main class="flex flex-col">
-            <!-- Search and Filter -->
-            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
-                <div class="flex space-x-2">
-                    <input type="text" placeholder="Search..." class="border border-gray-300 rounded px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
-                    <select class="border border-gray-300 rounded px-4 py-2 focus:ring-blue-500 focus:border-blue-500">
-                        <option value="">Filter by Faculty</option>
-                        <option value="science">Science</option>
-                        <option value="arts">Arts</option>
-                        <option value="engineering">Engineering</option>
-                    </select>
-                </div>
-                <div>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Search</button>
-                </div>
-            </div>
+        <main class="flex flex-col m-4">
 
             <!-- Events & Competitions Table -->
-            <div class="bg-white shadow-lg rounded-lg p-6 overflow-x-auto">
+            <div class="bg-white min-h-screen rounded-lg p-6 overflow-x-auto">
+                <!-- Filter -->
+                <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 mb-4">
+                    <!-- Keyword Input -->
+                    <input type="text" id="keyword-input" placeholder="Search by keyword..."
+                        class="w-full md:w-1/3 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <!-- Date Range Input -->
+                    <input type="text" id="date-input" placeholder="Select date range..."
+                        class="w-full md:w-1/4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 mb-4">
+                    <!-- Organizer Select -->
+                    <select id="category-select"
+                        class="w-full md:w-1/3 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All Organizer</option>
+                        <option value="technology">Technology</option>
+                        <option value="science">Science</option>
+                        <option value="math">Math</option>
+                        <option value="history">History</option>
+                    </select>
+
+                    <!-- Location Select -->
+                    <select id="category-select"
+                        class="w-full md:w-1/3 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All Location</option>
+                        <option value="technology">Technology</option>
+                        <option value="science">Science</option>
+                        <option value="math">Math</option>
+                        <option value="history">History</option>
+                    </select>
+
+                    <!-- Category Select -->
+                    <select id="category-select"
+                        class="w-full md:w-1/3 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All Categories</option>
+                        <option value="technology">Technology</option>
+                        <option value="science">Science</option>
+                        <option value="math">Math</option>
+                        <option value="history">History</option>
+                    </select>
+                </div>
+
                 <table class="w-full border-collapse hidden md:table">
                     <thead class="bg-gray-200 text-gray-600">
                         <tr>
@@ -91,19 +119,21 @@
                     </div>
                     <!-- Repeat the above card for each row in the table -->
                 </div>
-            </div>
 
-            <!-- Pagination -->
-            <div class="bg-white shadow-lg rounded-lg p-4 mt-6 flex justify-between items-center">
-                <div class="text-gray-600">Showing 1 to 3 of 50 entries</div>
-                <div class="flex space-x-2">
-                    <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">Previous</button>
-                    <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">1</button>
-                    <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">2</button>
-                    <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">3</button>
-                    <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">Next</button>
+                <!-- Pagination -->
+                <div class="rounded-lg p-4 mt-6 flex justify-between items-center">
+                    <div class="text-gray-600">Showing 1 to 3 of 50 entries</div>
+                    <div class="flex space-x-2">
+                        <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">Previous</button>
+                        <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">1</button>
+                        <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">2</button>
+                        <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">3</button>
+                        <button class="bg-gray-300 text-gray-700 px-3 py-1 rounded hover:bg-gray-400">Next</button>
+                    </div>
                 </div>
             </div>
+
+
         </main>
     </div>
 @endsection
