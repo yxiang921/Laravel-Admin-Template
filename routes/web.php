@@ -24,3 +24,7 @@ Route::get('/admin/events', function () {
 Route::get('/admin/analytics', function () {
     return view('admin.analytics');
 })->name('admin.analytics');
+
+Route::get('/admin/notifications', function(){
+    return view('admin.notifications');
+})->name('admin.notifications');

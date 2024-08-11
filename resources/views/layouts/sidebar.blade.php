@@ -39,26 +39,32 @@
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors 
                 {{ Route::current()->getName() == 'admin.home' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-house pr-2"></i> Home</a>
+
                 <a href="{{ route('admin.events') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.events' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-regular fa-calendar-days pr-2"></i> Events</a>
+
                 <a href="{{ route('admin.analytics') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.analytics' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-chart-simple pr-2"></i> Analytics</a>
-                <a href="{{ route('admin.home') }}"
+
+                <a href="{{ route('admin.notifications') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.notifications' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-bell pr-2"></i> Notifications</a>
+
                 <a href="{{ route('admin.home') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.users' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-user pr-2"></i> Users</a>
+
                 <a href="{{ route('admin.home') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.admin' ? 'text-slate-200' : 'text-slate-500' }}">
                     <i class="fa-solid fa-user-gear pr-2"></i> Admin</a>
+                    
                 <a href="{{ route('admin.home') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors
                 {{ Route::current()->getName() == 'admin.settings' ? 'text-slate-200' : 'text-slate-500' }}">
