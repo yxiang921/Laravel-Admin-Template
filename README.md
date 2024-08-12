@@ -8,5 +8,5 @@ Designed and developed a responsive admin dashboard template with Tailwind CSS a
 - Frontend: HTML, Tailwind (CSS), Blade
 - Others: Chartjs
 
-
-
+![Desktop View](https://github.com/yxiang921/Laravel-Admin-Template/blob/c573540d00526ed8da3b83aeb4c5e8ab9dc34add/desktop.png)
+![Mobile View](https://github.com/yxiang921/Laravel-Admin-Template/blob/c573540d00526ed8da3b83aeb4c5e8ab9dc34add/mobile.png)
