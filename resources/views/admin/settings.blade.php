@@ -17,7 +17,7 @@
                 <div class="grid grid-cols-8 pt-3 sm:grid-cols-10">
                     <div class="col-span-8 overflow-hidden rounded-xl bg-gray-50 px-8 shadow">
                         <div class="border-b pt-4 pb-8">
-                            <h1 class="py-2 text-2xl font-semibold">Notification settings</h1>
+                            <h1 class="py-2 text-2xl font-semibold">General system settings</h1>
                             <p class="font- text-slate-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                         <div class="grid border-b py-6 sm:grid-cols-2">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-4 flex flex-row w-full">
+                        <div class="mt-4 flex flex-row justify-between w-full my-6">
                             <div class="flex flex-col">
                                 <h2 class="text-lg font-semibold leading-4 text-slate-700">Site Name</h2>
                                 <p class="font- text-slate-600">Edit Your Website Name</p>
@@ -64,15 +64,30 @@
                                     placeholder=" " />
                                 <label
                                     class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-blue-500 before:border-blue-gray-200 peer-focus:before:!border-blue-500 after:border-blue-gray-200 peer-focus:after:!border-blue-500">
-                                    Enter Your Site Name
+                                    Site Name
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-4 flex flex-row justify-between w-full my-6">
+                            <div class="flex flex-col max-w-44">
+                                <h2 class="text-lg font-semibold leading-4 text-slate-700">Email Address</h2>
+                                <p class="font- text-slate-600">Edit Your Email Address for this system</p>
+                            </div>
+                            <div class="relative w-2/5 h-10 ml-8">
+                                <input
+                                    class="peer border-gray-300 w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2  focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
+                                    placeholder=" " />
+                                <label
+                                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-blue-500 before:border-blue-gray-200 peer-focus:before:!border-blue-500 after:border-blue-gray-200 peer-focus:after:!border-blue-500">
+                                    Email Address
                                 </label>
                             </div>
                         </div>
 
-
-
-
-
+                        <button
+                            class="float-right bg-blue-500 hover:bg-blue-700 my-6 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            Save
+                        </button>
                     </div>
                 </div>
             </div>
