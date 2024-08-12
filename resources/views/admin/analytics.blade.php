@@ -3,7 +3,7 @@
     <div class="flex-1 flex flex-col">
         <!-- Header -->
         <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between border-b border-gray-200">
-            <div class="text-gray-800 text-xl font-semibold">Events</div>
+            <div class="text-gray-800 text-xl font-semibold">Analytics</div>
         </header>
 
         <!-- Main area -->
@@ -51,7 +51,7 @@
     </div>
 
 <script>
-    var barChartCtx = document.getElementById('chart-1').getContext('2d');
+    var barChartCtx = document.getElementById('chart-3').getContext('2d');
     var barChart = new Chart(barChartCtx, {
         type: 'bar',
         data: {
@@ -90,7 +90,7 @@
         }
     });
 
-    var verticalBarChartCtx = document.getElementById('chart-3').getContext('2d');
+    var verticalBarChartCtx = document.getElementById('chart-1').getContext('2d');
     var verticalBarChart = new Chart(verticalBarChartCtx, {
         type: 'bar',
         data: {
