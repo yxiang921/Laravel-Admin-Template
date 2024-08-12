@@ -33,7 +33,9 @@
     <div class="flex h-screen overflow-hidden">
         <aside
             class="bg-gray-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full lg:relative lg:translate-x-0 transition-transform duration-200">
-            <div class="text-white text-2xl font-semibold px-4">College Events</div>
+            <div class="text-white text-2xl font-semibold px-4">
+                <a href="{{ route('admin.home') }}">College Events</a>
+            </div>
             <nav>
                 <a href="{{ route('admin.home') }}"
                     class="block py-3 px-4 rounded hover:bg-gray-700 transition-colors 
